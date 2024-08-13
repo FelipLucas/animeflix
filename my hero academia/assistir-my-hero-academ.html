@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="../images/images.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../style/style.css"/>
+    <script src="../script/animes.js" defer></script>
+    <title>漫画を読む - Jujutsu-Kaisen | watch</title>
+  </head>
+  <body>
+    <head>
+      <header>
+        <div class="div-header-title">
+          <a href="../index.html">
+            <h2>漫画を読む</h2>
+          </a>
+          <nav>
+            <a href="../index.html">Home</a>
+            <a href="../movies/movie.html">Movies</a>
+            <a href="../musics.html">Music's</a>
+            <a href="#" class="a-categoria-nav">Categories</a>
+          </nav>
+        </div>
+        <div class="div-header-perfil">
+          <div class="div-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+            <input
+              type="text"
+              name="search"
+              id="isearch"
+              placeholder="search"
+            />
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bell"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bell-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+            />
+          </svg>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkpK0ivrW-ZGZpkcsdicJYHYggxrzBSJNZg&s"
+              alt=""
+              class="img-perfil-search"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-caret-up-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+              />
+            </svg>
+          </div>
+        </div>
+        <section class="div-perfs-log">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            class="bi bi-x second-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkpK0ivrW-ZGZpkcsdicJYHYggxrzBSJNZg&s"
+            alt=""
+            class="img-perfil-choose"
+          />
+          <div class="div-list-perfslog">
+            <a href="#"
+            class="action-categories-formulary"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="10"
+                fill="currentColor"
+                class="bi bi-fire"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"
+                />
+              </svg>
+              Action</a
+            >
+            <a href="#"
+            class="adventure-categories-formulary"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-backpack4"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"
+                />
+                <path
+                  d="M8 0a2 2 0 0 0-2 2H3.5a2 2 0 0 0-2 2v1c0 .52.198.993.523 1.349A.5.5 0 0 0 2 6.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6.5a.5.5 0 0 0-.023-.151c.325-.356.523-.83.523-1.349V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2-2m0 1a1 1 0 0 0-1 1h2a1 1 0 0 0-1-1M3 14V6.937q.24.062.5.063h4v.5a.5.5 0 0 0 1 0V7h4q.26 0 .5-.063V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1m9.5-11a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"
+                />
+              </svg>
+              Adventure</a
+            >
+            <a href="#"
+            class= "comedy-categories-formulary"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-emoji-smile"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"
+                />
+              </svg>
+              Comedy</a
+            >
+            <a href="#"
+            class= "fiction-categories-formulary"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-robot"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"
+                />
+                <path
+                  d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"
+                />
+              </svg>
+              Fiction</a
+            >
+            <a href="#" class= "horror-categories-formulary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-vignette"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"
+                />
+                <path
+                  d="M8.5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m1.683-6.281a.5.5 0 1 1-.866-.5.5.5 0 0 1 .866.5m-3.5 6.062a.5.5 0 1 1-.866-.5.5.5 0 0 1 .866.5m4.598-4.598a.5.5 0 1 1-.5-.866.5.5 0 0 1 .5.866m-6.062 3.5a.5.5 0 1 1-.5-.866.5.5 0 0 1 .5.866M11.5 8.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-7 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m6.281 1.683a.5.5 0 1 1 .5-.866.5.5 0 0 1-.5.866m-6.062-3.5a.5.5 0 1 1 .5-.866.5.5 0 0 1-.5.866m4.598 4.598a.5.5 0 1 1 .866-.5.5.5 0 0 1-.866.5m-3.5-6.062a.5.5 0 1 1 .866-.5.5.5 0 0 1-.866.5"
+                />
+              </svg>
+              Horror</a
+            >
+          </div>
+          <form action="" method="post" class="form-cadaster">
+            <div class="div-cadaster">
+              <label for="iemail">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="iemail"
+                placeholder="email:"
+              />
+              <label for="iemail">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="ipassword"
+                placeholder="password:"
+              />
+              <label for="isubmit"></label>
+              <input type="submit" value="Send >" id="isubmit" />
+            </div>
+            <div class="div-links-cadaster">
+              <a href="">Cadaster</a>
+              <a href="">Forgot my password</a>
+            </div>
+          </form>
+        </section>
+        <section class="choose-images">
+          <div>
+            <img
+              src="../images/vilan-twwo.jpeg"
+              alt=""
+              class="img-choose-images1"
+            />
+            <img
+              src="../images/kaneki-one.jpeg"
+              alt=""
+              class="img-choose-images2"
+            />
+            <img src="../images/vilan.jpeg" alt="" class="img-choose-images3" />
+          </div>
+          <div>
+            <img
+              src="../images/kaeki-two.jpeg"
+              alt=""
+              class="img-choose-images4"
+            />
+            <img
+              src="https://wallpaperaccess.com/full/465576.jpg"
+              alt=""
+              class="img-choose-images5"
+            />
+            <img src="../images/tky.jpg" alt="" class="img-choose-images6" />
+          </div>
+          <div class="div-double-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-chevron-double-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+              />
+            </svg>
+          </div>
+        </section>
+        <section class="section-categories">
+          <div class="div-categories-list">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                </svg> Categories
+            </h2>
+            <div>
+              <a href="#" class="p-action">Action</a>
+              <a href="#" class="p-adventure">Adventure</a>
+              <a href="#" class="p-comedy">Comedy</a>
+              <a href="#" class="p-fiction">Fiction</a>
+              <a href="#" class="p-horror">Horror</a>
+            </div>
+            <div class="div-logo-categories">
+              <h2>漫画を読む</h2>
+            </div>
+          </div>
+          <div class="div-categories-set">
+            <h1 class="title-categories">Action (アクション)</h1>
+            <div class="div-images-categories">
+              <div>
+                <a href="../tokyo revenger/TokyoRevengers-001.html"><img src="https://i.pinimg.com/564x/4b/f6/94/4bf6944048b50995ed864bf18997a6f1.jpg" alt=""></a>
+                <a href="../jujutsu kaisen/assistir-jujutsu-kaisen.html"><img src="https://i.pinimg.com/564x/1e/38/ca/1e38cad1003a2a0d60cf5ec374d16218.jpg" alt=""></a>
+                <a href="tokyo revenger/TokyoRevengers-001.html"><img src="https://i.pinimg.com/736x/1b/22/cc/1b22ccfcddce15754cb08ed9496ce6f9.jpg" alt=""></a>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0qKxKicpo9MqrkgpQ1c-vOsbb9Q2VMF8VY26vjw7d0LyszDp-" alt="">
+                <a href="hajime no  ippo/assistir-hajime-no-ippo.html"><img src="https://i.pinimg.com/564x/cd/74/bc/cd74bc6f75ad3f591cfaf381d38e1b5a.jpg" alt=""></a>
+              </div>
+              <div>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgom2zO1xrycyv65_qrYH1vqaOmaG4MhxDVC9OW_ShUVhayD2VSkMQHOhJEyNAUdFDoDuszNn-1XWlPKyA3b8mu6lZWp8_Sjz4EL0pNO2OjTU-2Ow1eMLAx4MiHs1XHdtwS7CMCrVLCAZggomQ5MWsfF9E94I_ry8TLrYz4j83FcBKNgXuIdnrjylDagsPy/s1350/Kyojuro-Rengoku-AI-Anime-Artwork-Fanart-17.webp" alt="">
+                <a href="https://drive.google.com/file/d/1OW4WwrMrEwVOlVjQc5-IKO3kMieHH6Dc/preview" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZ1kK-jC2wI2Nqybr4YF2REbMVsdubzawZXtenBWbcT_U1kXoL" alt=""></a>
+                <a href="https://goone.pro/streaming.php?id=MTA3MDE1&title=Howl%27s+Moving+Castle+%28Dub%29+Episode+1" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdzpZmQZM2ESLPLF7GvO3IH-ZG46V285d-d_JBbxSkCg0-BzY" alt=""></a>
+                <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQadFquhPrpzBfU_k8OBmEsq39TSWUYTMAn62IlaqVCmhv-yxls" alt=""></a>
+                <a href="movies/your-name.html"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOiDJAeeN_TF0z7aydaIF3mnr-kEMHqG6RllxBw5KvIH_yiYUY" alt=""></a>
+              </div>
+            </div>
+            <div class="div-images-categories2">
+              <div>
+                <a href="https://ia801508.us.archive.org/0/items/big-fish-begonia-jolli/Big.Fish.%26.Begonia.2016.1080P.Bluray.X264-%5BYts.Am%5D-1.m4v" target="_blank"><img src="https://i.pinimg.com/originals/bb/d2/78/bbd2781c1ac8affb727eb7cbcced23fa.jpg" alt=""></a>
+                <a href="tokyo revenger/TokyoRevengers-001.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFP0whOjNl50P7A5LzMVJ2KPwSulWvB5fewoPrY8lO8wtkXTFC" alt=""></a>
+                <a href="https://drive.google.com/file/d/1OW4WwrMrEwVOlVjQc5-IKO3kMieHH6Dc/preview" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgvXkZsi_XdrLpov3da2hx1H1ACH2csgPFume6XVuaIGHT9TBh" alt=""></a>
+                <a href="tokyo ghoul/tokyoGhoul-001.html"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg0k7795JO9BGTtXCx6G68ZPRjLeaEGMJnKmW7FvbU1eTnhb-0" alt=""></a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH01Ywf_qfeLlvrv60VnLOSSzkdFRZ6-dwVLaWVWBbo2jCtcTY" alt="">
+              </div>
+              <div>
+                <img src="https://i.pinimg.com/564x/7f/3f/2e/7f3f2ee667ddfa55725bc4aa361f6173.jpg" alt="">
+                <a href="hajime no  ippo/assistir-hajime-no-ippo.html"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQS2GvPf9LMAhjtpmXnCGcgh0Kmvu0OIWgMkqMlBNm-ax6FDis" alt=""></a>
+                <a href="https://goone.pro/streaming.php?id=MTA3MDE1&title=Howl%27s+Moving+Castle+%28Dub%29+Episode+1" target="_blank"><img src="https://i.pinimg.com/736x/0b/c6/33/0bc633898ee3799c1b3aafc1be6c5ce3.jpg" alt=""></a>
+                <a href="movies/your-name.html"><img src="https://e1.pxfuel.com/desktop-wallpaper/625/396/desktop-wallpaper-your-name-poster-your-name.jpg" alt=""></a>
+                <a href=""><img src="https://fc03.deviantart.net/fs71/f/2011/035/c/4/another_purple__akihi_by_chocassajulie-d38tbg7.jpg" alt=""></a>
+              </div>
+            </div>
+            <div class="div-images-categories3">
+              <div>
+                <a href="https://ia801508.us.archive.org/0/items/big-fish-begonia-jolli/Big.Fish.%26.Begonia.2016.1080P.Bluray.X264-%5BYts.Am%5D-1.m4v" target="_blank"><img src="https://i.pinimg.com/564x/fe/1d/c0/fe1dc0ca26f7e4777e2399afda8ecf35.jpg" alt=""></a>
+                <a href="https://drive.google.com/file/d/1OW4WwrMrEwVOlVjQc5-IKO3kMieHH6Dc/preview" target="_blank"><img src="https://i.pinimg.com/originals/67/cf/3a/67cf3a7091639575ab4cae5e9e1fd891.jpg" alt=""></a>
+                <a href="tokyo revenger/TokyoRevengers-001.html"><img src="https://i.pinimg.com/736x/3d/ea/26/3dea268db267172c60063ac5d6e8b695.jpg" alt=""></a>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c419d03-46dc-411d-8b2a-dc8aa504952a/dfhbko2-8621c770-0660-4503-9408-fde705448b7f.jpg/v1/fill/w_853,h_937,q_70,strp/devil_liebe_by_mainyaszed_dfhbko2-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU2MiIsInBhdGgiOiJcL2ZcLzRjNDE5ZDAzLTQ2ZGMtNDExZC04YjJhLWRjOGFhNTA0OTUyYVwvZGZoYmtvMi04NjIxYzc3MC0wNjYwLTQ1MDMtOTQwOC1mZGU3MDU0NDhiN2YuanBnIiwid2lkdGgiOiI8PTQxNTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kln1PIF_i99qFpUk9xg0jj3bGw6U4LmqjVGbarysmI8" alt="">
+                <a href="tokyo ghoul/tokyoGhoul-001.html"><img src="https://i.pinimg.com/736x/14/7e/ab/147eab404f19c61999df39fe40f17b77.jpg" alt=""></a>
+              </div>
+              <div>
+                <a href="hajime no  ippo/assistir-hajime-no-ippo.html"><img src="https://i.pinimg.com/564x/94/5a/e2/945ae2d7f17ce87cbe37a5a31a583c2c.jpg" alt=""></a>
+                <img src="https://i.pinimg.com/564x/e1/cc/b8/e1ccb8db91c45c4d36b1df1473189054.jpg" alt="">
+                <a href="https://goone.pro/streaming.php?id=MTA3MDE1&title=Howl%27s+Moving+Castle+%28Dub%29+Episode+1" target="_blank"><img src="https://i.pinimg.com/736x/0b/c6/33/0bc633898ee3799c1b3aafc1be6c5ce3.jpg" alt=""></a>
+                <a href="movies/your-name.html"><img src="https://e1.pxfuel.com/desktop-wallpaper/625/396/desktop-wallpaper-your-name-poster-your-name.jpg" alt=""></a>
+                <a href=""><img src="https://fc03.deviantart.net/fs71/f/2011/035/c/4/another_purple__akihi_by_chocassajulie-d38tbg7.jpg" alt=""></a>
+              </div>
+            </div>
+            <div class="div-images-categories4">
+              <div>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c419d03-46dc-411d-8b2a-dc8aa504952a/dfhbko2-8621c770-0660-4503-9408-fde705448b7f.jpg/v1/fill/w_853,h_937,q_70,strp/devil_liebe_by_mainyaszed_dfhbko2-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU2MiIsInBhdGgiOiJcL2ZcLzRjNDE5ZDAzLTQ2ZGMtNDExZC04YjJhLWRjOGFhNTA0OTUyYVwvZGZoYmtvMi04NjIxYzc3MC0wNjYwLTQ1MDMtOTQwOC1mZGU3MDU0NDhiN2YuanBnIiwid2lkdGgiOiI8PTQxNTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kln1PIF_i99qFpUk9xg0jj3bGw6U4LmqjVGbarysmI8" alt="">
+                <a href="tokyo ghoul/tokyoGhoul-001.html"><img src="https://i.pinimg.com/736x/14/7e/ab/147eab404f19c61999df39fe40f17b77.jpg" alt=""></a>
+                <a href="https://ia801508.us.archive.org/0/items/big-fish-begonia-jolli/Big.Fish.%26.Begonia.2016.1080P.Bluray.X264-%5BYts.Am%5D-1.m4v" target="_blank"><img src="https://e0.pxfuel.com/wallpapers/519/221/desktop-wallpaper-juuzou-suzuya-edit-fanart-fanartes-tokyo-ghoul-anime-thumbnail.jpg" alt=""></a>
+                <a href="tokyo revenger/TokyoRevengers-001.html"><img src="https://preview.redd.it/asbo5g55fgp41.jpg?width=640&crop=smart&auto=webp&s=8e6bf5e45c8e6152f89f11784818a0bc98bab9ae" alt=""></a>
+                <a href="https://drive.google.com/file/d/1OW4WwrMrEwVOlVjQc5-IKO3kMieHH6Dc/preview" target="_blank"><img src="http://images4.fanpop.com/image/photos/21100000/Hellsing-hellsing-21198802-400-800.jpg" alt=""></a>
+              </div>
+              <div>
+                <a href="hajime no  ippo/assistir-hajime-no-ippo.html"><img src="https://i.pinimg.com/564x/94/5a/e2/945ae2d7f17ce87cbe37a5a31a583c2c.jpg" alt=""></a>
+                <img src="https://i.pinimg.com/564x/e1/cc/b8/e1ccb8db91c45c4d36b1df1473189054.jpg" alt="">
+                <a href="https://goone.pro/streaming.php?id=MTA3MDE1&title=Howl%27s+Moving+Castle+%28Dub%29+Episode+1" target="_blank"><img src="https://i.pinimg.com/736x/0b/c6/33/0bc633898ee3799c1b3aafc1be6c5ce3.jpg" alt=""></a>
+                <a href="movies/your-name.html"><img src="https://e1.pxfuel.com/desktop-wallpaper/625/396/desktop-wallpaper-your-name-poster-your-name.jpg" alt=""></a>
+                <a href=""><img src="https://fc03.deviantart.net/fs71/f/2011/035/c/4/another_purple__akihi_by_chocassajulie-d38tbg7.jpg" alt=""></a>
+              </div>
+            </div>
+            <div class="div-images-categories5">
+              <div>
+                <img src="https://i.pinimg.com/236x/08/1c/90/081c90c6576a2fcf01794c72193e57fb.jpg" alt="">
+                <a href="https://ia801508.us.archive.org/0/items/big-fish-begonia-jolli/Big.Fish.%26.Begonia.2016.1080P.Bluray.X264-%5BYts.Am%5D-1.m4v" target="_blank"><img src="https://i.pinimg.com/564x/c0/93/cd/c093cd7d18b6208bf336d27cf53b97f5.jpg" alt=""></a>
+                <a href="tokyo ghoul/tokyoGhoul-001.html"><img src="https://i.pinimg.com/564x/b0/5c/11/b05c112dde5e71db1da5cee8f102dd54.jpg" alt=""></a>
+                <a href="tokyo revenger/TokyoRevengers-001.html"><img src="https://i.pinimg.com/564x/e7/76/3b/e7763b6abda87871cdc3e89bd725fefc.jpg" alt=""></a>
+                <a href="https://drive.google.com/file/d/1OW4WwrMrEwVOlVjQc5-IKO3kMieHH6Dc/preview" target="_blank"><img src="https://i.pinimg.com/564x/f7/64/7b/f7647bc27b689a6adc2efe1814769528.jpg" alt=""></a>
+              </div>
+              <div>
+                <a href="hajime no  ippo/assistir-hajime-no-ippo.html"><img src="https://i.pinimg.com/564x/8a/6b/29/8a6b295709fbe3a9b8e5b4509c87a54d.jpg" alt=""></a>
+                <img src="https://cdnb.artstation.com/p/assets/images/images/037/905/597/large/matheus-lima-guts.jpg?1621618061" alt="">
+                <a href="https://goone.pro/streaming.php?id=MTA3MDE1&title=Howl%27s+Moving+Castle+%28Dub%29+Episode+1" target="_blank"><img src="https://i.pinimg.com/564x/99/b1/02/99b10259fb8234a2c2a53e6d37550792.jpg" alt=""></a>
+                <a href="movies/your-name.html"><img src="https://e1.pxfuel.com/desktop-wallpaper/625/396/desktop-wallpaper-your-name-poster-your-name.jpg" alt=""></a>
+                <a href=""><img src="https://fc03.deviantart.net/fs71/f/2011/035/c/4/another_purple__akihi_by_chocassajulie-d38tbg7.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="div-closer-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </div>
+        </section>
+      </header>
+    </head>
+    <main>
+      <section class="section-watch">
+        <img
+          src="https://image.tmdb.org/t/p/w342/mWHCII5OWHx5pRSN2VYYLvT8DbB.jpg"
+          alt=""
+        />
+        <div class="div-watch">
+          <div class="div-title-movie">
+            <p class="p-title-movie">My Hero Academia</p>
+            <div class="carac-title-movie">
+              <p><strong>2017</strong></p>
+              <p>♱</p>
+              <p class="p1-gener-movie">Anime</p>
+              <p class="p2-gener-movie">Ação</p>
+            </div>
+          </div>
+          <div class="div-sinapse-movie">
+            <p>
+              <strong>Synopsis:</strong> Think of a story in which you are the protagonist. It would probably be a tragedy, wouldn't it? Well, that's Midoriya's story... 
+              Extraordinary events are happening in Japan. Due to superpowered individuals, society concluded that these incidents were the result of "quirks" of various 
+              kinds. Midoriya is a high school student, passionate about becoming a hero. He and his friends, Bakugo and Uraraka, face challenges and discover the demanding 
+              world of hero training. Little do they know, their journey could change everything.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="div-title-videos-movies">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            fill="currentColor"
+            class="bi bi-play-btn"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+            />
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"
+            />
+          </svg>
+          Watch Jujutsu Kaisen
+        </p>
+      </div>
+      <section class="section-episodes-movies">
+        <div class="div-episodes-movies">
+          <div class="div-episodes001">
+            <a href="tokyoGhoul-001.html"
+              ><img
+                src="https://image.tmdb.org/t/p/w300/5S4t7vjGUahG8ieEUTDNPi1DPBh.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-001.html">
+              <p class="p-episode-movie">Episódio 001</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-002.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/4Aa6blmgqkJDVDrf70Un1hXfjIT-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-002.html">
+              <p class="p-episode-movie">Episódio 002</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-003.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/un1Xph8SN0yBOwwa4ntNga0XkiN-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-003.html">
+              <p class="p-episode-movie">Episódio 003</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-004.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/fUq0PFzkFH0cTmsw9sBpTE2vgw9-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-004.html">
+              <p class="p-episode-movie">Episódio 004</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-005.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/fBVvIvLZ1pMg8Ox1MSRBmbTiIz3-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-005.html">
+              <p class="p-episode-movie">Episódio 005</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-006.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/1dIpjSrV4ViDPCuiuyCS1ISDDSO-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-006.html">
+              <p class="p-episode-movie">Episódio 006</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-007.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/i4Yf5yWJuNW2r2ufYyC9GU8INeF-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-007.html">
+              <p class="p-episode-movie">Episódio 007</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-008.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/nAWnMtHNLKxpT015Lorue9G4LfK-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-008.html">
+              <p class="p-episode-movie">Episódio 008</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-009.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/y8A33rJZSKx3xy4XPXmgXWHvs2N-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-009.html">
+              <p class="p-episode-movie">Episódio 009</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-010.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/3QC4VYPiVCW7IEynQfrrGqFaNyg-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-010.html">
+              <p class="p-episode-movie">Episódio 010</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-011.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/dXfjYFWR087jOEPdDUTgECpfctw-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-011.html">
+              <p class="p-episode-movie">Episódio 011</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div>
+            <a href="tokyoGhoul-012.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/koVhy5mauwCw6D9PErUyX0ZBFeL-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-012.html">
+              <p class="p-episode-movie">Episódio 012</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies">
+          <div class="div-episodes001">
+            <a href="tokyoGhoul-001.html"
+              ><img
+                src="https://animeszone.net/wp-content/uploads/2021/02/bKdjFwLHyaa6TPZxeFOflLifXxH-300x170.jpg"
+                alt=""
+            /></a>
+            <a href="tokyoGhoul-001.html">
+              <p class="p-episode-movie">Episódio 013</p>
+            </a>
+            <p class="p-episode-movie-date">08-07-2024</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-film"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="div-episodes-movies-next-season">
+          <div>
+            <p>2</p>
+          </div>
+          <p class="p-next-season">Season 2</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      //categories
+let body = document.querySelector('body');
+let categories = document.querySelector('.section-categories');
+let linkCategories = document.querySelector('.a-categoria-nav');
+
+let categoriesAction = document.querySelector('.p-action');
+let categoriesContentAction = document.querySelector('.div-images-categories');
+
+let categoriesAdventure = document.querySelector('.p-adventure');
+let categoriesContentAdventure = document.querySelector('.div-images-categories2');
+
+let categoriesComedy = document.querySelector('.p-comedy');
+let categoriesContentComedy = document.querySelector('.div-images-categories3');
+
+let categoriesFiction = document.querySelector('.p-fiction');
+let categoriesContentFiction = document.querySelector('.div-images-categories4');
+
+let categoriesHorror = document.querySelector('.p-horror');
+let categoriesContentHorror = document.querySelector('.div-images-categories5');
+
+let categoriesTitle = document.querySelector('.title-categories');
+
+let closerCategoriesBtn = document.querySelector('.div-closer-btn');
+
+let formularyAction = document.querySelector('.action-categories-formulary');
+let formularyAdventure = document.querySelector('.adventure-categories-formulary');
+let formularyComedy = document.querySelector('.comedy-categories-formulary');
+let formularyFiction = document.querySelector('.fiction-categories-formulary');
+let formularyHorror = document.querySelector('.horror-categories-formulary');
+
+linkCategories.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  
+  categoriesAction.classList.add('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentAction.style.display = 'flex';
+})
+
+formularyAction.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  
+  categoriesAction.classList.add('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentAction.style.display = 'flex';
+});
+
+formularyAdventure.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  categoriesTitle.innerHTML = 'Adventure (冒 険)';
+
+  categoriesAdventure.classList.add('focus-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentAction.style.display = 'none';
+  categoriesContentAdventure.style.display = 'flex';
+});
+
+formularyComedy.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  categoriesTitle.innerHTML = 'Comedy (コメディ)';
+
+  categoriesComedy.classList.add('focus-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentComedy.style.display = 'flex';
+  categoriesContentAction.style.display = 'none';
+});
+
+formularyFiction.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  categoriesTitle.innerHTML = 'Fiction (フィクション)';
+
+  categoriesFiction.classList.add('focus-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentFiction.style.display = 'flex';
+  categoriesContentAction.style.display = 'none';
+});
+
+formularyHorror.addEventListener('click', () =>{
+  body.style.overflow = 'hidden';
+  categories.style.display = 'flex';
+  categories.classList.add('animation-categories');
+  categoriesTitle.innerHTML = 'Horror (ホラー)';
+
+  categoriesHorror.classList.add('focus-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+
+  perfil.style.display = 'none';
+  categoriesContentHorror.style.display = 'flex';
+  categoriesContentAction.style.display = 'none';
+});
+
+closerCategoriesBtn.addEventListener('click', () =>{
+  categories.style.display = 'none';
+  body.style.overflow = 'auto';
+});
+
+categoriesAction.addEventListener('click', () =>{
+  categoriesTitle.innerHTML = 'Action (アクション)';
+
+  categoriesContentAction.classList.add('animation-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  categoriesContentAction.style.display = 'flex';
+  categoriesContentAdventure.style.display = 'none';
+  categoriesContentComedy.style.display = 'none';
+  categoriesContentFiction.style.display = 'none';
+  categoriesContentHorror.style.display = 'none';
+});
+
+categoriesAdventure.addEventListener('click', () =>{
+  categoriesTitle.innerHTML = 'Adventure (冒 険)';
+
+  categoriesContentAdventure.classList.add('animation-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  categoriesContentAdventure.style.display = 'flex';
+  categoriesContentAction.style.display = 'none';
+  categoriesContentComedy.style.display = 'none';
+  categoriesContentFiction.style.display = 'none';
+  categoriesContentHorror.style.display = 'none';
+});
+
+categoriesComedy.addEventListener('click', () =>{
+  categoriesTitle.innerHTML = 'Comedy (コメディ)';
+
+  categoriesContentComedy.classList.add('animation-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  categoriesContentComedy.style.display = 'flex';
+  categoriesContentAdventure.style.display = 'none';
+  categoriesContentAction.style.display = 'none';
+  categoriesContentFiction.style.display = 'none';
+  categoriesContentHorror.style.display = 'none';
+});
+
+categoriesFiction.addEventListener('click', () =>{
+  categoriesTitle.innerHTML = 'Fiction (フィクション)';
+
+  categoriesContentFiction.classList.add('animation-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesHorror.classList.remove('focus-categories');
+
+  categoriesContentFiction.style.display =  `flex`;
+  categoriesContentComedy.style.display = 'none';
+  categoriesContentAdventure.style.display = 'none';
+  categoriesContentAction.style.display = 'none';
+  categoriesContentHorror.style.display = 'none';
+});
+
+categoriesHorror.addEventListener('click', () =>{
+  categoriesTitle.innerHTML = 'Horror (ホラー)';
+
+  categoriesContentHorror.classList.add('animation-categories');
+  categoriesAction.classList.remove('focus-categories');
+  categoriesAdventure.classList.remove('focus-categories');
+  categoriesComedy.classList.remove('focus-categories');
+  categoriesFiction.classList.remove('focus-categories');
+
+  categoriesContentHorror.style.display = 'flex';
+  categoriesContentAction.style.display = 'none';
+  categoriesContentAdventure.style.display = 'none';
+  categoriesContentComedy.style.display = 'none';
+  categoriesContentFiction.style.display =  `none`;
+});
+    </script>
+  </body>
+</html>
