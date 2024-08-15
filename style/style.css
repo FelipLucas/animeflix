@@ -167,6 +167,36 @@ header nav a:active {
   animation: perfil-secao 1s ease-in-out forwards;
 }
 
+.div-result-search{
+   position: absolute;
+   top: 3rem;
+   right: 2rem;
+   display: none;
+   gap: 2rem;
+   width: 500px;
+   height: 200px;
+   background-color: #0a0a0a;
+   animation: categories-animation 1s ease-in-out;
+}
+
+.div-result-search img{
+   width: 150px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+.div-result-search div{
+   display: flex;
+   flex-direction: column;
+   margin: 2rem 2rem 0 0;
+   gap: 1rem;
+}
+
+.div-result-search div p:last-child{
+   font-size: 12px;
+}
+
 @keyframes perfil-secao {
   0% {
     width: 0;

@@ -94,6 +94,8 @@
       <input type="submit" value="post" id="isend">
    </form>
 
+   <ul class="list-posts"></ul>
+
    <script>
       let $form = document.querySelector('form');
       let closeBtn = document.querySelector('.div-close');
@@ -103,8 +105,11 @@
       });
 
       $form.addEventListener('submit', function criaPostsController(infosDoEvento){
+         const $creatPost = document.querySelector('input[name="text"]');
+         const $postlist = document.querySelector('.list-posts');
          infosDoEvento.preventDefault();
-         console.log('iosdoihs');
+
+         $postlist.insertAdjacentHTML('afterbegin', `<li>${$creatPost.value}</li>`)
       });
    </script>
 </body>
