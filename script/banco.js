@@ -73,7 +73,7 @@ $search.addEventListener('click', function criaPostsController(infosDoEvento){
       $postlistLink.href = 'hajime no  ippo/assistir-hajime-no-ippo.html';
       $postlistLink.href = '../hajime no  ippo/assistir-hajime-no-ippo.html';
       $postlistTitle.innerHTML = 'Hajime no Ippo';
-   } else if($creatPost.value != 'Hajime no ippo' && $creatPost.value != 'hajime no ippo' && $creatPost.value != 'one punch man' && $creatPost.value != 'One punch man' && $creatPost.value != 'Tokyo Ghoul' && $creatPost.value != 'tokyo ghoul' && $divsearchWidth > 25){
+   } else if($creatPost.value != 'Hajime no ippo' && $creatPost.value != 'hajime no ippo' && $creatPost.value != 'one punch man' && $creatPost.value != 'One punch man' && $creatPost.value != 'Tokyo Ghoul' && $creatPost.value != 'tokyo ghoul' && $creatPost.value  != 'hunter x hunter' && $creatPost.value != 'Hunter x Hunter' && $divsearchWidth > 25){
       window.alert('no anime search');
    }
 });
