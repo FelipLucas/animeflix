@@ -3,80 +3,110 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-      *{
-         padding: 0;
-         margin: 0;
-         color: #ffffff;
-      }
-      body{
-         background: #141414;
-      }
-      form{
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         width: 800px;
-         height: 400px;
-         border-radius: 20px;
-         background: #000000;
-      }
-      
-      .div-close{
-         position: absolute;
-         top: 1rem;
-         right: 1.5rem;
-         cursor: pointer;
-      }
-
-      div#itext{
-         display: flex;
-         align-items: center;
-         gap: 1rem;
-         margin: 4rem 4rem;
-      }
-
-      div#itext img{
-         width: 50px;
-         height: 50px;
-         border-radius: 50%;
-      }
-
-      div#itext input{
-         font-size: 20px;
-         background: transparent;
-         border: none;
-      }
-      div#itext input:focus{
-         outline: none;
-      }
-
-      .hr{
-         display: flex;
-         justify-content: center;
-         width: 90%;
-         height: .5px;
-         margin: 15rem auto 2rem auto;
-         background-color: #ffffff9a;
-      }
-
-      #isend{
-         position: absolute;
-         bottom: 2rem;
-         right: 2rem;
-         width: 100px;
-         height: 40px;
-         border: none;
-         border-radius: 20px;
-         font-size: 16px;
-         background: #141414;
-         cursor: pointer;
-      }
-   </style>
+   <link rel="shortcut icon" href="../images/images.png" type="image/x-icon"/>
+   <link rel="stylesheet" href="../style/socials.css">
    <title>Banco de dados</title>
 </head>
 <body>
+   <head>
+      <div class="body2">
+         <header>
+            <nav>
+               <div class="div-header-logo">
+                  <p>漫画を読む</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                     <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                   </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-social" viewBox="0 0 16 16">
+                     <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                   </svg>
+                   <p>home</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                   </svg>
+                   <p>search</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                   </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill-social" viewBox="0 0 16 16">
+                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                   </svg>
+                   <p>notifications</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                   </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill-social" viewBox="0 0 16 16">
+                     <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+                   </svg>
+                   <p>my dashboard</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                   </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-social" viewBox="0 0 16 16">
+                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                   </svg>
+                   <p>profile</p>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                   </svg>
+                   <p>more</p>
+               </div>
+               <button>post</button>
+            </nav>
+            <div class="div-profile-social">
+               <div class="div-profile-social-image">
+                  <a href="#"><img src="https://i.pinimg.com/736x/03/7e/3a/037e3aabc029df1bcf4ca88299409eca.jpg" alt="" class="img-perflog-social"></a>
+                  <div>
+                     <a href="#">
+                        your profile
+                     </a>
+                     <p>@......</p>
+                  </div>
+               </div>
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                  </svg>
+               </div>
+            </div>
+         </header>
+            </head>
+            <section class="section-foryou">
+         <div class="div-foryou">
+            <p>for you</p>
+         </div>
+         <div class="div-foryou-post">
+            <div class="div-post-anything">
+               <div>
+                  <a href="#"><img src="https://i.pinimg.com/736x/03/7e/3a/037e3aabc029df1bcf4ca88299409eca.jpg" alt="" class="img-perflog-social"></a>
+                  <label for="ipost"></label>
+                  <input type="text" name="post" id="ipost" placeholder="post anything...">
+               </div>
+               <div class="div-everuone-cansee">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                     <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                   </svg>
+                   <p>Everyone can see</p>
+               </div>
+                  <div class="hr-foryou-post"></div>
+               </div>
+               <button class="btn-foryou-post">post</button>
+         </div>
+            </section>
+      </div>
+   
    <form action="" method="POST">
       <div class="div-close">
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -84,33 +114,43 @@
           </svg>
       </div>
       <div id="itext">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkpK0ivrW-ZGZpkcsdicJYHYggxrzBSJNZg&s" alt="">
+         <img src="https://i.pinimg.com/736x/03/7e/3a/037e3aabc029df1bcf4ca88299409eca.jpg" alt="">
          <input type="text" name="text" id="itext" placeholder="digite seu texto">
       </div>
-
+   
       <div class="hr"></div>
-
+   
       <label for="isend"></label>
       <input type="submit" value="post" id="isend">
    </form>
-
    <ul class="list-posts"></ul>
-
+   
    <script>
       let $form = document.querySelector('form');
       let closeBtn = document.querySelector('.div-close');
+      let postBtn = document.querySelector('header nav button');
+      
+      let $body = document.querySelector('.body2');
 
+      //close and open post
       closeBtn.addEventListener('click', () =>{
          $form.style.display = 'none';
+         $body.style.filter = 'none';
       });
-
+      
+      postBtn.addEventListener('click', () =>{
+         $form.style.display = 'block';
+         $body.style.filter = 'blur(10px)';
+      })
+      
+      //posta
       $form.addEventListener('submit', function criaPostsController(infosDoEvento){
          const $creatPost = document.querySelector('input[name="text"]');
          const $postlist = document.querySelector('.list-posts');
          infosDoEvento.preventDefault();
-
+         
          $postlist.insertAdjacentHTML('afterbegin', `<li>${$creatPost.value}</li>`)
       });
-   </script>
+      </script>
 </body>
 </html>
