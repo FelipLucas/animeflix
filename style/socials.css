@@ -118,21 +118,22 @@ header nav div{
    margin: 1.5rem;
 }
 
-.div-post-anything div{
+.div-post-anything div:first-child{
    display: flex;
    align-items: center;
    gap: .5rem;
 }
 
 .div-everuone-cansee{
+   display: none;
    gap: .5rem;
    margin: 0 4rem;
    cursor: pointer;
 }
 
 .div-everuone-cansee p, .div-everuone-cansee svg{
-   fill: #791b1b;
-   color: #791b1b;
+   fill: #ff0000;
+   color: #ff0000ca;
 }
 
 .div-post-anything input{
@@ -166,6 +167,22 @@ header nav div{
    background-color: #292929;
    font-size: 14px;
    cursor: pointer;
+}
+
+.options-burtton-post{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin: 0 4rem;
+}
+
+.options-burtton-post div{
+   padding: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.options-burtton-post div:hover{
+   background-color: #ffffff14;
 }
 
 /*formulario post create*/
