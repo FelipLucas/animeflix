@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="../images/images.png" type="image/x-icon"/>
    <link rel="stylesheet" href="../style/socials.css">
+   <script src="bancolocal.js" defer></script>
    <title>animeflix social media</title>
 </head>
 <body>
@@ -168,8 +169,12 @@
          const $creatPost = document.querySelector('input[name="text"]');
          const $postlist = document.querySelector('.list-posts');
          infosDoEvento.preventDefault();
+
+         userInformations.createPost({ owner: 'felipe', content: $createPost.value});
          
-         $postlist.insertAdjacentHTML('afterbegin', `<li>${$creatPost.value}</li>`)
+         $postlist.insertAdjacentHTML('afterbegin', `<li>${dados.content}</li>`);
+         
+         $creatPost.value = '';
       });
       </script>
 </body>
