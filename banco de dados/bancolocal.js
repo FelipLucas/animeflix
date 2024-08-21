@@ -20,11 +20,10 @@ const userInformations = {
          owner: dados.owner,
          content: dados.content
       });
+      const $postlist = document.querySelector('.list-posts');
+      $postlist.insertAdjacentHTML('afterbegin', `<li>${dados.content}</li>`);
    }
 }
-
-userInformations.createPost({ owner: 'felipe', content: 'segundo tweet' });
-console.log(userInformations);
 
 //read
 function pegaPosts(){

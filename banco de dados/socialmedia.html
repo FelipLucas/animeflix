@@ -162,17 +162,19 @@
       postBtn.addEventListener('click', () =>{
          $form.style.display = 'block';
          $body.style.filter = 'blur(10px)';
-      })
+      });
+
+      //READ
+      userInformations.posts.forEach(({owner, content}) => {
+         userInformations.createPost({ owner: owner, content: content});
+      });
       
       //posta
       $form.addEventListener('submit', function criaPostsController(infosDoEvento){
          const $creatPost = document.querySelector('input[name="text"]');
-         const $postlist = document.querySelector('.list-posts');
          infosDoEvento.preventDefault();
 
          userInformations.createPost({ owner: 'felipe', content: $createPost.value});
-         
-         $postlist.insertAdjacentHTML('afterbegin', `<li>${dados.content}</li>`);
          
          $creatPost.value = '';
       });
