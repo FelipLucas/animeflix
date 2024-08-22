@@ -23,7 +23,10 @@ $search.addEventListener('click', function criaPostsController(infosDoEvento){
    }
    if($creatPost.value === 'tokyo ghoul'){
       $postlist.style.display = 'flex';
-      //$postlist.insertAdjacentHTML('afterbegin', `<li>${$creatPost.value}</li>`);
+      $postlistImage.src = 'https://mangabr-p.b-cdn.net/edf82115a1abcebd8f02e871a70b95ed/cover.jpg.webp';
+      $postlistLink.href = '../tokyo ghoul/tokyoGhoul-001.html';
+      $postlistLink.href = 'tokyo ghoul/tokyoGhoul-001.html';
+      $postlistTitle.innerHTML = '東京グール (Tokyo Ghoul)';
    }
    
    //hunter x hunter
