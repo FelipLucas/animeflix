@@ -167,6 +167,12 @@
             }
          ],
 
+         readPosts(){
+            miniTwitter.posts.forEach(({ owner, content }) =>{
+            miniTwitter.createPost({ owner: owner, content: content }, true);
+            });
+         },
+
          //create
          createPost(dados, htmlOnly = false){
             if(!htmlOnly){
@@ -180,7 +186,7 @@
 
             //cria posts no html
             const $postlist = document.querySelector('.list-posts');
-            $postlist.insertAdjacentHTML('afterbegin', `<li>${dados.content}</li>`);
+            $postlist.insertAdjacentHTML('afterbegin', `<p>${dados.content}</p>`);
          }
       };
       console.log(miniTwitter.posts)
@@ -198,9 +204,7 @@
       });
 
       //bank : read
-      miniTwitter.posts.forEach(({ owner, content }) =>{
-         miniTwitter.createPost({ owner: owner, content: content }, true);
-      })
+      miniTwitter.readPosts();
       
       //create
       $form.addEventListener('submit', function criaPostsController(infosDoEvento){
@@ -220,6 +224,8 @@
          $form.style.display = 'none';
          $body.style.filter = 'none';
       });
+
+      //CRUD: delete
       </script>
 </body>
 </html>
