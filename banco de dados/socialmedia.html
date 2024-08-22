@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="../images/images.png" type="image/x-icon"/>
    <link rel="stylesheet" href="../style/socials.css">
+   <script src="bancolocal.js" defer></script>
    <title>animeflix social media</title>
 </head>
 <body>
@@ -122,8 +123,9 @@
                         </div>
                      </div>
                   </div>
+                  <button class="btn-foryou-post">post</button>
                   <ul class="list-posts"></ul>
-               <button class="btn-foryou-post">post</button>
+            </div>
          </div>
             </section>
       </div>
@@ -186,7 +188,23 @@
 
             //cria posts no html
             const $postlist = document.querySelector('.list-posts');
-            $postlist.insertAdjacentHTML('afterbegin', `<p>${dados.content}</p>`);
+            $postlist.insertAdjacentHTML('afterbegin', `                  
+            <div class="div-posted">
+                     <img src="https://i.pinimg.com/736x/03/7e/3a/037e3aabc029df1bcf4ca88299409eca.jpg" alt="">
+
+                     <div class="div-name-perf-posted">
+                        <div>
+                           <p><storng>your profile</storng></p>
+                           <p class="second">@your profile</p>
+                           <p class="three">·</p>
+                           <p class="timer-posted">1h</p>
+                        </div>
+                        <div>
+                           <p>
+                              ${dados.content}
+                           </p>
+                        </div>
+                     </div>`);
          }
       };
       console.log(miniTwitter.posts)

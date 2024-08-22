@@ -1,48 +1,12 @@
-const userInformations = {
-   users: [
-      {
-         users: 'felip',
-      }
-   ],
-   posts: [
-      {
-         id: 1,
-         owner: 'felip',
-         content: 'hello world',
-      }
-   ],
+let timerPosted = document.querySelector('.timer-posted');
+let timerPostedTimer = 0;
+console.log(timerPosted)
 
-   //create
-   createPost(dados){
-      //cria posts na mmemóeias
-      userInformations.posts.push({
-         id: userInformations.posts.length + 1,
-         owner: dados.owner,
-         content: dados.content
-      });
+function timerPostedUptaded(){
+   timerPostedTimer++;
+
+   if(timerPostedTimer > 60){
+      timerPosted.innerHTML = `${timerPostedTimer + String('s')}`;
    }
-}
 
-//read
-function pegaPosts(){
-   return userInformations.posts;
-} 
-
-//update
-function updatePostContent(id, newContent){
-   const postUptaded = pegaPosts().find(() =>{
-      return postMessage.id === id;
-   });
-   postUptaded.content = newContent;
-}
-updatePostContent('novo conteudo do tweet');
-
-//Delete
-function deletePost(id){
-   const postListUptaded = pegaPosts().filter((currentPost) =>{
-      return currentPost.id !== id;
-   });
-
-   console.log(postListUptaded);
-}
-deletePost(2);
+} setInterval(timerPostedUptaded, 1000);
