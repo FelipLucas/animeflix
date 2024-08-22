@@ -1,12 +1,8 @@
-let timerPosted = document.querySelector('.timer-posted');
-let timerPostedTimer = 0;
+let timerPosted = document.querySelector('.timer-posted')
+let timerPostedTimer = new Date();
 console.log(timerPosted)
 
-function timerPostedUptaded(){
-   timerPostedTimer++;
-
-   if(timerPostedTimer > 60){
-      timerPosted.innerHTML = `${timerPostedTimer + String('s')}`;
-   }
-
-} setInterval(timerPostedUptaded, 1000);
+/*function timerPostedUptaded(){
+   timerPostedTimer = new Date();
+   timerPosted.textContent = timerPosted.
+} setInterval(timerPostedUptaded, 1000);*/
