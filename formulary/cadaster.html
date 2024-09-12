@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+         font-family: Arial, Helvetica, sans-serif;
+         background: #000000;
+         color: #ffffff;
+      }
+
+      main{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+
+      form{
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+         width: 600px;
+         height: 800px;
+         margin: auto;
+         padding: 5rem 3rem;
+         background: #0a0a0a;
+         border-radius: 5px;
+      }
+
+      form h2{
+         font-weight: 500;
+      }
+
+      form div:not(.div-password){
+         display: flex;
+         flex-direction: column;
+         gap: .5rem;
+      }
+
+      form input:not(.submit){
+         height: 35px;
+         border-radius: 5px;
+         background: #00000016;
+         border: 1px solid #e6e6e6a8;
+         padding: 0 1rem;
+         color: #ffffff;
+      }
+
+      .div-password{
+         display: flex;
+         align-items: center;
+         gap: 1.5rem;
+      }
+
+      .div-password div{
+         position: relative;
+         width: 50%;
+      }
+
+      label#ipassword{
+         position: relative;
+         width: 50%;
+      }
+
+      .div-password div div{
+         position: absolute;
+         top: 55%;
+         right: -40%;
+      }
+      
+      .bi-eye-slash{
+         cursor: pointer;
+         z-index: 1;
+      }
+
+      .div-password div div input{
+         display: none;
+      }
+
+      .div-password div{
+         width: 50%;
+      }
+
+      .submit{
+         width: 100px;
+         height: 40px;
+         border-radius: 10px;
+         border: none;
+         font-size: 14px;
+         background: #d92525;
+         color: #e6e6e6;
+         cursor: pointer;
+      }
+   </style>
+   <title>Cadaster - 漫画を読む</title>
+</head>
+<body>
+   <main>
+      <form action="cadaster.php" method="post">
+         <h2>Register New Account</h2>
+         <div>
+            <label for="iname">Full Name</label>
+            <input type="text" name="name" id="iname" placeholder="type your name">
+         </div>
+         <div>
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" placeholder="type your email">
+         </div>
+         <div class="div-password">
+            <div>
+               <label for="ipassword">
+                  Password
+
+                  <div>
+                     <label for="icheck">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+                           <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"/>
+                           <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"/>
+                           <path d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"/>
+                         </svg>
+                     </label>
+                     <input type="checkbox" name="check" id="icheck">
+                  </div>
+               </label>
+               <input type="password" name="password" id="ipassword">
+            </div>
+            <div>
+               <label for="ipasswordrepeat">Repeat Password</label>
+               <input type="password" name="passwordrepeat" id="ipasswordrepeat">
+            </div>
+         </div>
+         <input type="submit" value="send >" class="submit">
+      </form>
+   </main>
+   <script>
+      let showPassword = document.querySelector('.bi-eye-slash');
+      showPassword.addEventListener('click', () =>{
+         let inputPassword = document.querySelector('#ipassword');
+         if(inputPassword.getAttribute('type') == 'password'){
+            inputPassword.setAttribute('type', 'text');
+         } else{
+            inputPassword.setAttribute('type', 'password');
+         }
+      });
+   </script>
+</body>
+</html>
